@@ -170,15 +170,17 @@ body {
     font-size: 14px;
     margin-left: 20px;
     transition: 0.3s;
+    cursor: pointer;
 
 }
 .b1:hover{
     transform: scale(1.03);
-    background-color: #F5F5F5;
+
 }
 .hover1{
     cursor: pointer;
     transition: 0.2s;
+    cursor: pointer;
 
 }
 
@@ -190,41 +192,62 @@ body {
 .content-left {
     height: 600px;
     width: 400px;
-    background-color: #2A2A2A;
+    background-color: #121212;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 30px;
+
 }
 
 .library {
-    height: 75px;
+   
     display: flex;
+    height: 60px;
     justify-content: space-around;
+    
 
-    border: 2px white solid;
-    align-items: center;
+    
+    align-items: flex-end;
     font-weight: 600;
 }
 
 .library div {
-    height: 40px;
-    width: 80px;
-    background-color: #4A4A4A;
+    height: 30px;
+    width: 110px;
+    background-color: #1F1F1F;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     margin-left: 100px;
+    position: relative;
+    top: 9px;
+    cursor: pointer;
 }
 
 .playlist {
-    height: 135px;
-    background-color: #4A4A4A;
+    height: 145px;
+   background-color: #1F1F1F;
     display: flex;
     flex-direction: column;
     width: 380px;
-    margin-left: 10px;
-    justify-content: space-around;
+    border-radius: 7px;
+    justify-content: space-evenly;
+  
+   
+    flex-shrink: 0; 
+}
+.left-box::-webkit-scrollbar {
+    /* display: none; */
+    width: 0;
+}
+.left-box:hover::-webkit-scrollbar {
+    width: 8px;
+}
+
+.left-box::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
 }
 
 .playlist button {
@@ -238,8 +261,11 @@ body {
     margin-left: 20px;
     transition: 0.3s;
     border: none;
+    cursor: pointer;
 
 }
+
+
 
 .playlist p {
     margin-left: 25px;
@@ -247,6 +273,61 @@ body {
 
 .playlist h3 {
     margin-left: 25px;
+}
+
+.left-box{
+    height: 280px;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin-left: 10px;
+   
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    gap: 20px;
+}
+
+.left-bottom {
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px 20px;
+    font-size: 12px;
+}
+.cookies {
+    height: 30px;
+    width: 100%;
+    display: flex;
+
+
+}
+.cookies p {
+    margin-left: 17px;
+    color: white;
+    font-weight: 450;
+}
+
+
+.about {
+    margin-left: 20px;
+}
+
+.glob {
+    display: flex;
+    width: 110px;
+    height: 30px;
+    margin-left: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 17px;
+    position: relative;
+    bottom: 10px;
+
 }
 
 
